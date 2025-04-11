@@ -1,0 +1,234 @@
+2025-04-10 12:43:19,462 - root - INFO - Database connected successfully
+2025-04-10 12:43:19,719 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 12:43:20,585 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:43:26,266 - aiogram.event - INFO - Update id=19659027 is not handled. Duration 20 ms by bot id=7585117401
+2025-04-10 12:43:26,266 - aiogram.event - ERROR - Cause exception while process update id=19659027 by bot id=7585117401
+TypeError: '>' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/bot/handlers/base.py", line 356, in show_stats
+    await send_statistics(message)
+  File "/home/izzatulloh/it_backend_bot/bot/handlers/statistica.py", line 29, in send_statistics
+    if top_user and "username" in top_user and progress > 0:
+                                               ^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'str' and 'int'
+2025-04-10 12:45:51,327 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 12:45:51,329 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:45:51,329 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 12:45:59,638 - root - INFO - Database connected successfully
+2025-04-10 12:45:59,891 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 12:46:01,770 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:46:05,636 - aiogram.event - INFO - Update id=19659028 is handled. Duration 907 ms by bot id=7585117401
+2025-04-10 12:46:38,253 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 12:46:38,254 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:46:38,254 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 12:46:43,855 - root - INFO - Database connected successfully
+2025-04-10 12:46:44,108 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 12:46:44,969 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:46:48,323 - aiogram.event - INFO - Update id=19659029 is handled. Duration 958 ms by bot id=7585117401
+2025-04-10 12:56:52,669 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 12:56:52,671 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:56:52,671 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 12:56:57,975 - root - INFO - Database connected successfully
+2025-04-10 12:56:58,230 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 12:56:59,100 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 12:57:01,196 - aiogram.event - INFO - Update id=19659030 is handled. Duration 1048 ms by bot id=7585117401
+2025-04-10 13:02:02,752 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:02:02,753 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:02:02,754 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:02:07,735 - root - INFO - Database connected successfully
+2025-04-10 13:02:07,984 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:02:08,849 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:02:22,419 - aiogram.event - INFO - Update id=19659031 is handled. Duration 965 ms by bot id=7585117401
+2025-04-10 13:02:37,562 - aiogram.event - INFO - Update id=19659032 is handled. Duration 145 ms by bot id=7585117401
+2025-04-10 13:03:06,880 - aiogram.event - INFO - Update id=19659033 is handled. Duration 244 ms by bot id=7585117401
+2025-04-10 13:06:22,946 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:06:22,947 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:06:22,947 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:06:28,551 - root - INFO - Database connected successfully
+2025-04-10 13:06:28,815 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:06:29,664 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:06:42,617 - aiogram.event - INFO - Update id=19659034 is handled. Duration 1051 ms by bot id=7585117401
+2025-04-10 13:06:44,687 - aiogram.event - INFO - Update id=19659035 is handled. Duration 198 ms by bot id=7585117401
+2025-04-10 13:09:06,196 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:09:06,197 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:09:06,197 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:09:12,626 - root - INFO - Database connected successfully
+2025-04-10 13:09:12,892 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:09:13,823 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:09:41,415 - aiogram.event - INFO - Update id=19659036 is handled. Duration 908 ms by bot id=7585117401
+2025-04-10 13:12:21,970 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:12:21,971 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:12:21,971 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:12:27,476 - root - INFO - Database connected successfully
+2025-04-10 13:12:27,729 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:12:28,600 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:12:30,183 - aiogram.event - INFO - Update id=19659037 is handled. Duration 922 ms by bot id=7585117401
+2025-04-10 13:17:33,420 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:17:33,421 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:17:33,421 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:17:38,835 - root - INFO - Database connected successfully
+2025-04-10 13:17:39,083 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:17:39,952 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:18:06,450 - aiogram.event - INFO - Update id=19659038 is not handled. Duration 21 ms by bot id=7585117401
+2025-04-10 13:18:06,450 - aiogram.event - ERROR - Cause exception while process update id=19659038 by bot id=7585117401
+PostgresSyntaxError: syntax error at or near "Only"
+Traceback (most recent call last):
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/bot/handlers/base.py", line 356, in show_stats
+    await send_statistics(message)
+  File "/home/izzatulloh/it_backend_bot/bot/handlers/statistica.py", line 12, in send_statistics
+    hour = await db.get_most_active_hour()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/bot/database.py", line 286, in get_most_active_hour
+    result = await conn.fetchval("""
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/asyncpg/connection.py", line 714, in fetchval
+    data = await self._execute(query, args, 1, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/asyncpg/connection.py", line 1864, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/asyncpg/connection.py", line 1961, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/asyncpg/connection.py", line 2004, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/izzatulloh/it_backend_bot/venv/lib/python3.12/site-packages/asyncpg/connection.py", line 432, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 165, in prepare
+asyncpg.exceptions.PostgresSyntaxError: syntax error at or near "Only"
+2025-04-10 13:20:59,841 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:20:59,841 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:20:59,842 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:21:05,632 - root - INFO - Database connected successfully
+2025-04-10 13:21:05,883 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:21:06,760 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:21:10,210 - aiogram.event - INFO - Update id=19659039 is handled. Duration 953 ms by bot id=7585117401
+2025-04-10 13:23:51,685 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:23:51,686 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:23:51,686 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:23:57,294 - root - INFO - Database connected successfully
+2025-04-10 13:23:57,547 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:23:58,421 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:24:01,560 - aiogram.event - INFO - Update id=19659040 is handled. Duration 1017 ms by bot id=7585117401
+2025-04-10 13:24:23,321 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:24:23,322 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:24:23,323 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:24:28,593 - root - INFO - Database connected successfully
+2025-04-10 13:24:28,857 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:24:29,728 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:24:32,906 - aiogram.event - INFO - Update id=19659041 is handled. Duration 932 ms by bot id=7585117401
+2025-04-10 13:24:39,278 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 13:24:39,279 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:24:39,280 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 13:24:44,792 - root - INFO - Database connected successfully
+2025-04-10 13:24:45,044 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 13:24:45,911 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 13:24:48,558 - aiogram.event - INFO - Update id=19659042 is handled. Duration 1054 ms by bot id=7585117401
+2025-04-10 14:55:53,966 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 14:55:53,978 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 14:55:53,978 - aiogram.dispatcher - INFO - Polling stopped
+2025-04-10 14:56:00,117 - root - INFO - Database connected successfully
+2025-04-10 14:56:00,400 - aiogram.dispatcher - INFO - Start polling
+2025-04-10 14:56:01,243 - aiogram.dispatcher - INFO - Run polling for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 14:56:09,273 - aiogram.event - INFO - Update id=19659043 is handled. Duration 916 ms by bot id=7585117401
+2025-04-10 15:04:37,748 - aiogram.dispatcher - WARNING - Received SIGINT signal
+2025-04-10 15:04:37,750 - aiogram.dispatcher - INFO - Polling stopped for bot @OsonTalimBot_bot id=7585117401 - "Oson Ta'lim Bot"
+2025-04-10 15:04:37,750 - aiogram.dispatcher - INFO - Polling stopped
