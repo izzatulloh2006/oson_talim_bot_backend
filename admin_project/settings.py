@@ -1,5 +1,9 @@
 from pathlib import Path
+from dotenv import load_dotenv
 import os
+
+
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -63,15 +67,18 @@ WSGI_APPLICATION = 'admin_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'yusuf2006_it_ai',
-        'USER': 'yusuf2006',
-        'PASSWORD': 'yusuf20060320',
-        'HOST': 'postgresql-yusuf2006.alwaysdata.net',
+        'NAME': 'it_ai_company',
+        'USER': 'postgres',
+        'PASSWORD': '1',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
 
+# mysql -u osontalimbott$osontalimbot -h osontalimbott.mysql.pythonanywhere-services.com -p
 
+
+# mysql -u osontalimbott -h osontalimbott.mysql.pythonanywhere-services.com -p izzat2006
 
 # DATABASE_URL=postgresql://yusuf2006:yusuf20060320@postgresql-yusuf2006.alwaysdata.net:5432/yusuf2006_it_ai?sslmode=require
 #

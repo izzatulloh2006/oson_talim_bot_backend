@@ -1,7 +1,5 @@
 from django.urls import path, include
-from .views import BotUserApiView, FeedbackApiView
-from . import views
-from .views import CourseViewSet, CourseVideoViewSet, CourseVideosByNameView, ActiveJobList, ActiveFreelanceProjectList, InstituteView, StartupView, CourseAuthorsView, AuthorVideosView
+from .views import CourseViewSet, CourseVideoViewSet, CourseVideosByNameView, ActiveJobList, ActiveFreelanceProjectList, InstituteView, StartupView, CourseAuthorsView, AuthorVideosView, BotUserApiView, FeedbackApiView
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
